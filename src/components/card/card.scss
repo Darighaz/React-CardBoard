@@ -1,0 +1,53 @@
+div.cb-card {
+    display: block;
+    overflow: hidden;
+
+    width: 280px;
+    min-height: 160px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background:white;
+
+    .card-header{
+        background-color: rgba(0, 0, 0, 0.51);
+        .card-header-title{
+            padding: 0.50rem;
+            font-size: 0.9rem;
+            color:white;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            text-align: left;
+            white-space: nowrap; 
+        }
+        .card-header-icon{
+            padding: 0.50rem;
+            span i{
+                color:white;
+            }
+        }
+    }
+    .card-content{
+        padding:5px;
+        height: 80px;
+
+        .content{
+            padding:5px;
+            max-height: 200px;
+            font-size: 0.85rem;
+            text-align: justify;
+
+            .editable{
+                width: 250px;
+                height: 60px;
+                background: hsla(208, 50%, 93%, 1)
+            }
+        }
+    }
+    .card-footer-item{
+        cursor:pointer; cursor: hand;
+        color:black;
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+  }

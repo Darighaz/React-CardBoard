@@ -1,0 +1,46 @@
+div.cb-column{
+    max-width: 320px;
+    background-color: rgba(0, 0, 0, 0.38);
+    border-radius: 5px;
+    max-height: 80vh;
+    min-height: 500px;
+    padding: 6px;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin:5px;
+
+    .box{
+        padding:12px;
+        background-color: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+        height: 90%;
+        margin:auto;
+        margin-bottom:0px !important;
+        text-align: center;
+    }
+    .column-title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        color: White;
+        font-weight: bold;
+        text-align: left;
+        padding: 3px 5px;
+        white-space: nowrap; 
+    }
+
+    .box+.column-title{
+        text-align: center;
+        margin: 5px;
+        a{
+            color: White;
+        }
+    }
+}
