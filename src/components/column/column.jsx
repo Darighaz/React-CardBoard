@@ -44,8 +44,10 @@ class Column extends Component {
             <div id="scroll" className="box" onDrop={this.dragOver}>
                 {this.props.cardList.map((card, i) => <Card key={card.id} columnId={card.columnId} id={card.id} description={card.description} title={card.title}></Card>)}
             </div>
-            <input type="text" onKeyUp={this.addCard} onChange={this.onChangeInput} value={cardTitle} placeholder="Añadir Tarea"></input>
-            <span onClick={this.deleteColumn} className="icon"><i className="fas fa-trash-alt"></i></span>
+            <div>
+                <input type="text" onKeyUp={this.addCard} onChange={this.onChangeInput} value={cardTitle} placeholder="Añadir Tarea"></input>
+                <span onClick={this.deleteColumn} className="icon"><i className="fas fa-trash-alt"></i></span>
+            </div>
         </div>
     }
 
